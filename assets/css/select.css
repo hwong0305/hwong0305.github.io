@@ -1,0 +1,29 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border: solid 3px blue;
+  box-sizing: border-box;
+  margin: 3px;
+}
+
+.selected {
+  background: #000080;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 530px;
+}
+
+.container__selection_cursor {
+  position: absolute;
+  opacity: 0.5;
+  background: blue;
+  z-index: 4000;
+}
+
+.hidden {
+  display: none;
+}
