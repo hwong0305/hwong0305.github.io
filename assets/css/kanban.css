@@ -1,0 +1,84 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  margin: 30px;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.messages > div {
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.messages > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.ToDo > header {
+  background-color: #35235d;
+}
+
+.Doing > header {
+  background-color: #cb2402;
+}
+
+.Done > header {
+  background-color: #4c49a2;
+}
+
+.Approved > header {
+  background-color: #a31a48;
+}
+
+.moveButton {
+  background: inherit;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+article {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.messages > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  height: 70px;
+}
+
+footer > textarea {
+  width: 70%;
+  resize: vertical;
+}
+
+footer > button {
+  width: 30%;
+}
+
+#undo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  width: 120px;
+}
+
+.hidden-button {
+  color: #dcdcdc;
+}
