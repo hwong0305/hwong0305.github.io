@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:myproxy": "bundle exec jekyll build && node server.js",
+    "setup": "./scripts/setup.sh",
+    "start:myproxy": "npm run setup && node server.js",
     "test": "echo \"Error: no test specifie\" && exit 1"
   },
   "repository": {
