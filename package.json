@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "./scripts/setup.sh",
-    "start:myproxy": "npm run setup && node server.js",
+    "start:myproxy": "node server.js",
     "test": "echo \"Error: no test specifie\" && exit 1"
   },
   "repository": {
